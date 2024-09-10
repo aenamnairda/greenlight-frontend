@@ -1,0 +1,68 @@
+/* Fonts */
+@import '~@fontsource/be-vietnam-pro/300.css';
+@import '~@fontsource/be-vietnam-pro/400.css';
+@import '~@fontsource/be-vietnam-pro/500.css';
+@import '~@fontsource/be-vietnam-pro/600.css';
+@import '~@fontsource/be-vietnam-pro/700.css';
+@import '~@fontsource/be-vietnam-pro/800.css';
+
+@import '~@fontsource/inter/600.css';
+@import '~@fontsource/inter/700.css';
+@import '~@fontsource/inter/800.css';
+
+@import '~@fontsource/roboto-mono/400.css';
+@import '~@fontsource/roboto-mono/500.css';
+
+/* Remove if mapbox is not used */
+@import '~mapbox-gl/dist/mapbox-gl.css';
+
+/* Remove if nprogress is not used */
+#nprogress {
+  --NProgress-color: var(--joy-palette-primary-300);
+  --NProgress-height: 2px;
+  --NProgress-zIndex: 99999;
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: var(--NProgress-color);
+  position: fixed;
+  z-index: var(--NProgress-zIndex);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--NProgress-height);
+}
+
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow:
+    0 0 10px var(--NProgress-color),
+    0 0 5px var(--NProgress-color);
+  opacity: 1;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove is recharts is not used */
+.recharts-pie path:focus {
+  outline: none;
+}
+
+/* Remove if react-simple-maps is not used */
+.rsm-geographies path:focus {
+  outline: none;
+}
+
+/* Custom variables */
+/* :root {} */
+
+/* Custom styles */
+:focus-visible {
+  outline: var(--joy-palette-primary-600) solid 2px;
+}
